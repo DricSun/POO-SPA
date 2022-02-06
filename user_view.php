@@ -40,19 +40,24 @@ if(isset($_POST['name']) && isset($_POST['type'])){
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>SPA</title>
 </head>
-<body>
+<body class="userbody">
+
+<h2>Ajouter votre petit compagnon</h2>
 
 <form method="post" action="user_view.php">
     <label>Nom de l'animal</label>
     <input type="text" name="name">
     <label>Type de l'animal</label>
     <input type="text" name="type">
+    <div class="align">
     <input type="submit" value="Ajouter un animal">
+    </div>
 </form>
 
-<div>
+<div class="pet">
     <?php foreach ($user->getAnimals() as $pet){
 
         echo $pet->getName().' '.$pet->getType();

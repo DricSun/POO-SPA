@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+@font-face {
+    font-family: 'Animal Paws';
+    src: url(./asset/Animal\ Paw.ttf) format('truetype');
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    background-image: url('./asset/animaux-compagnie-conseil.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    background-color: rgb(46, 143, 143);
+    padding: 15px;
+    gap: 8px;
+    border-radius: 25px;
+    width: 20%;
+    
+}
+
+input[type='submit']{
+    cursor: pointer;
+    margin-top: 15px;
+    width: 50%;
+    font-weight: 700;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(62, 181, 197);
+    color: white;
+    
+}
+
+input{
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+}
+
+label{
+    color: white;
+    font-weight: 700;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50PX;
+    font-family: 'Animal Paws';
+    font-size: 4rem;
+    letter-spacing: 8px;
+}
+
+button{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 7%;
+    height: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.userbody{
+    position: relative;
+    background-image: url(./asset/mod-le-sans-couture-avec-les-chats-et-chiens-mignons-belles-illustration-conception-de-vecteur-pour-tissus-textile-papier-peint-154389413.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    text-align: center;
+    padding-top: 50PX;
+    font-family: 'Animal Paws';
+    font-size: 3rem;
+    letter-spacing: 8px;
+}
+
+.pet{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: turquoise;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(52, 133, 125);
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 430px) {
+    form{
+        width: 90%;
+    }
+
+    button{
+        width: 30%;
+    }
+
+    h1{
+        padding-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:830px) {
+    form{
+        width: 40%;
+    }
+
+    button{
+        width: 20%;
+    }
+}
